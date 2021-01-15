@@ -1,3 +1,5 @@
+# Swipe Controller
+
 ```kotlin
 package com.paigesoftware.swipedelete.SwipeController
 
@@ -256,6 +258,8 @@ class SwipeController(private val buttonsActions: SwipeControllerActions?) : Ite
 }
 ```
 
+# Swipe Controller Actions
+
 ```kotlin
 abstract class SwipeControllerActions {
     abstract fun onLeftClicked(position: Int)
@@ -263,6 +267,7 @@ abstract class SwipeControllerActions {
 }
 ```
 
+# Swipe Controller Usage
 ```kotlin
 private fun setupRecyclerView() {
         recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
